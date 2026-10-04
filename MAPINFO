@@ -1,0 +1,28 @@
+map MAP01 "Blockshire"
+{
+	sky1 = "BSKYDAY", 0
+	music = "BLOCKSHR"
+	nointermission
+}
+
+DoomEdNums
+{
+	21001 = Vagrant
+	21002 = Campfire
+	21003 = Tent
+	21004 = WheatCrop
+	21005 = GreedPortal
+	21006 = CatStatue
+	21007 = TNTBlock
+	21009 = BlockTorch
+	21010 = KingdomBanner
+	21012 = Sheep
+	21013 = Chick
+	21014 = CourtCat
+	21015 = Bunny
+}
+
+GameInfo
+{
+	AddEventHandlers = "BlockshireHandler", "BlockshireDirector", "BlockCamHandler"
+}

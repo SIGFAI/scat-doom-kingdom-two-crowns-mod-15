@@ -1,0 +1,22 @@
+version "4.14"
+
+#include "zscript/economy.zs"
+#include "zscript/weapons.zs"
+#include "zscript/greed.zs"
+#include "zscript/kingdom.zs"
+#include "zscript/handler.zs"
+#include "zscript/director.zs"
+
+// "netevent cam x y angle": puts the Monarch at a spot (used to look at the realm while building it).
+class BlockCamHandler : EventHandler
+{
+	override void NetworkProcess(ConsoleEvent e)
+	{
+		if (e.Name != "cam") return;
+		let mo = players[e.Player].mo;
+		if (!mo) return;
+		mo.SetOrigin((e.Args[0], e.Args[1], mo.CurSector.NextLowestFloorAt(e.Args[0], e.Args[1], 4096)), false);
+		mo.angle = e.Args[2];
+		mo.pitch = 0;
+	}
+}

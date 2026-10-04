@@ -1,0 +1,2 @@
+server bool sigf_nodaynight = false;
+server int sigf_timeshift = 0;

@@ -1,0 +1,31 @@
+coin/pick      sounds/coinpick.ogg
+coin/drop      sounds/coindrop.ogg
+coin/spill     sounds/coinspill.ogg
+coin/shot      sounds/coinshot.ogg
+coin/hit       sounds/coinhit.ogg
+bow/shot       sounds/bowshot.ogg
+bow/hit        sounds/arrowhit.ogg
+greed/sight    sounds/greedsight.ogg
+greed/pain     sounds/greedpain.ogg
+greed/die      sounds/greeddie.ogg
+greed/attack   sounds/greedattack.ogg
+greed/mask     sounds/maskpop.ogg
+cat/meow1      sounds/meow1.ogg
+cat/meow2      sounds/meow2.ogg
+cat/meow3      sounds/meow3.ogg
+cat/purr       sounds/purr.ogg
+$random cat/meow { cat/meow1 cat/meow2 cat/meow3 }
+kingdom/recruit  sounds/recruit.ogg
+kingdom/build    sounds/build.ogg
+kingdom/horn     sounds/hornnight.ogg
+kingdom/dawn     sounds/dawn.ogg
+kingdom/crown    sounds/crownsteal.ogg
+kingdom/victory  sounds/victory.ogg
+portal/hum     sounds/portalhum.ogg
+portal/break   sounds/portalbreak.ogg
+tnt/fuse       sounds/tntfuse.ogg
+tnt/boom       sounds/tntboom.ogg
+$volume greed/sight 0.8
+$limit coin/pick 4
+$limit coin/drop 3
+$limit greed/sight 2
