@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "name": "SCAT, mod 15: Doom × Kingdom Two Crowns",
   "tagline": "Turn every game into Minecraft. This time, mix in Kingdom Two Crowns with a funny twist of your own.",
+  "how_to_play": [
+    "Rule Blockshire as Sir Whiskers: hire archers, survive each Blood Moon and smash the Greed portals to save the realm.",
+    "Flick gold coins with the Royal Coin Flick, swat with the Royal Paw, and shove TNT once you find the TNT Shove.",
+    "Walk up to a vagrant with coins to pay one and make an archer; if the Greed steal your crown, take down the thief.",
+    "Start a new game in Blockshire and follow the cat's quests at the top right of the screen."
+  ],
   "kind": "mashup",
   "games": [
     {
