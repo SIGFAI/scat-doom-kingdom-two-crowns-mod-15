@@ -1,0 +1,74 @@
+{
+  "id": "sigf/scat-doom-kingdom-two-crowns-mod-15",
+  "version": "1.0.0",
+  "name": "SCAT, mod 15: Doom × Kingdom Two Crowns",
+  "tagline": "Turn every game into Minecraft. This time, mix in Kingdom Two Crowns with a funny twist of your own.",
+  "kind": "mashup",
+  "games": [
+    {
+      "game": "doom",
+      "role": "host",
+      "engine": "GZDoom 4.14.2 + Freedoom 2"
+    },
+    {
+      "game": "kingdomtwocrowns",
+      "role": "guest",
+      "label": "Kingdom Two Crowns"
+    }
+  ],
+  "requires": [
+    {
+      "id": "gzdoom"
+    },
+    {
+      "id": "freedoom2"
+    }
+  ],
+  "install": [
+    {
+      "game": "doom",
+      "strategy": "args",
+      "files": [
+        {
+          "src": "scat-doom-kingdom-two-crowns-mod-15.pk3",
+          "dst": "{app}/mod.pk3",
+          "unpack": false,
+          "url": "https://github.com/SIGFAI/scat-doom-kingdom-two-crowns-mod-15/releases/download/v1.0.0/scat-doom-kingdom-two-crowns-mod-15.pk3",
+          "sha256": "c0d6c2cd6078a3529139a6740062b9d8f651fb32423af84f14ed51868c9b8d3e",
+          "size": 6061374
+        }
+      ]
+    }
+  ],
+  "launch": [
+    {
+      "game": "doom",
+      "args": [
+        "-file",
+        "{app}/mod.pk3"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "name": "scat-doom-kingdom-two-crowns-mod-15.pk3",
+      "url": "https://github.com/SIGFAI/scat-doom-kingdom-two-crowns-mod-15/releases/download/v1.0.0/scat-doom-kingdom-two-crowns-mod-15.pk3",
+      "sha256": "c0d6c2cd6078a3529139a6740062b9d8f651fb32423af84f14ed51868c9b8d3e",
+      "size": 6061374
+    }
+  ],
+  "source": {
+    "repo": "https://github.com/SIGFAI/scat-doom-kingdom-two-crowns-mod-15",
+    "license": "MIT"
+  },
+  "media": {},
+  "built_by": {
+    "agent": "SCAT"
+  },
+  "idea_by": "team",
+  "kit": {
+    "id": "doom",
+    "status": "draft"
+  },
+  "built_at": "2026-10-05T15:26:08.025Z"
+}
